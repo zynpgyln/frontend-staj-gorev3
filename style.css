@@ -1,0 +1,154 @@
+/*   GENEL SAYFA   */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/*    HEADER   */
+header {
+  background-color: #f2f2f2;
+  color: #6a1b4d;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+header h1, header p {
+  margin: 0;
+  color: #6a1b4d;
+}
+
+/*   NAV   */
+nav {
+  display: flex;
+  justify-content: center;  /* Flexbox konteyneri içinde elemanları yatay eksende ortalamak için kullanılır*/
+  gap: 20px;
+  flex-wrap: wrap;
+  background-color: #f2f2f2;
+  padding: 15px 0;
+}
+
+nav a {
+  color: #6a1b4d;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  text-decoration: none;
+}
+
+/*   İLETİŞİM LİNKLERİ   */
+#iletisim a {
+  color: #6a1b4d;
+  text-decoration:  none; 
+  transition: color 0.3s ease;
+}
+
+#iletisim a:hover {
+  color: #9b3a5e;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 15px;
+}
+
+.contact-item {
+  background-color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  flex: 1 1 200px;
+  text-align: center;
+}
+
+/*   SECTION - BÖLÜM STİLLERİ   */
+section {
+  background-color: #f2f2f2;
+  margin: 20px auto;
+  padding: 25px 30px;
+  max-width: 900px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  border-left: 5px solid #6a1b4d;
+}
+
+/*   BAŞLIKLAR   */
+h2 {
+  color: #6a1b4d;
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #d8bfd8;
+  padding-bottom: 5px;
+}
+
+/*   METİNLER   */
+p, li {
+  color: #333;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/*   PROJE LİNKLERİ FLEXBOX   */
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 15px;
+  padding-left: 0;
+}
+
+.projects-container li {
+  list-style: none;    /* Nokta veya sayı görünmez, liste öğeleri sadece metin olarak görünür.*/
+  background-color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  flex: 1 1 250px;
+  text-align: center;
+}
+
+.projects-container li a {
+  color: #6a1b4d;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.projects-container li a:hover {
+  color: #9b3a5e;
+  transform: translateX(5px);
+}
+
+/*   RESPONSIVE (MOBİL)   */
+@media screen and (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .contact-container, .projects-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  section {
+    padding: 15px 20px;
+    margin: 15px 10px;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  p, li {
+    font-size: 14px;
+  }
+}
